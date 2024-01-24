@@ -4,7 +4,7 @@
       class="text-center"
       cols="12"
     >
-      {{ new Date().getFullYear() }} — <strong>Easy Hiring</strong>
+      {{ new Date().getFullYear() }} — <strong>Khetala.com</strong>
     </v-col>
   </v-footer>
 </template>

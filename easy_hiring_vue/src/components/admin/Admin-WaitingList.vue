@@ -32,7 +32,11 @@
                         <tr v-for="item in jobs" :key="item.id">
                             <td>{{ item.name }}</td>
                             <td>{{ item.email }}</td>
-                            <td>{{ item.citizenShip }}</td>
+                            <td>
+                                <v-img class="white--text align-end" height="100px" :src="item.citizenShip"
+                                    :style="{ objectFit: 'cover', width: '300px' }">
+                                </v-img>
+                            </td>
                             <td>{{ item.location }}</td>
 
                             <td>

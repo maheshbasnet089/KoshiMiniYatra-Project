@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
       <a class="navbar-brand" style="color:#3f51b5 !important" href="#"
-        @click.prevent="$router.push({ name: 'home' })">Easy Hiring</a>
+        @click.prevent="$router.push({ name: 'home' })">Khetala.com</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
