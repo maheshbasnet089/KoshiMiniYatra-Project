@@ -12,6 +12,7 @@ const jwtMiddleware = require('./../../middleware/auth/authjwt')
 const profileController = require('./../../controller/user/profile')
 
 const authController = require("../../controller/auth/auth");
+const catchAsync = require('../../services/catchAsync')
 
 
 // File Uploading with multer
@@ -45,11 +46,11 @@ const fileStorage = multer.diskStorage({
   );
   //File Uploading Ends
 
-router.get('/profile', [jwtMiddleware.verifyToken], [jwtMiddleware.isLogedOut], profileController.getProfile)
-router.post('/profile', [jwtMiddleware.verifyToken], [jwtMiddleware.isLogedOut], filehandler, profileController.postProfile)
+router.get('/profile', [jwtMiddleware.verifyToken], [jwtMiddleware.isLogedOut], catchAsync(profileController.getProfile))
+router.post('/profile', [jwtMiddleware.verifyToken], [jwtMiddleware.isLogedOut], catchAsync(filehandler), catchAsync(profileController.postProfile))
 
-router.post("/forgotpassword",authController.forgotPassword)
-router.post("/resetpassword",authController.resetPassword)
+router.post("/forgotpassword",catchAsync(authController.forgotPassword))
+router.post("/resetpassword",catchAsync(authController.resetPassword))
 
 
 module.exports = router
