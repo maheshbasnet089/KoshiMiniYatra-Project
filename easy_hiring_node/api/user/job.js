@@ -27,7 +27,7 @@ const upload = multer({ storage: storage });
 
 router
   .route("/")
-  .post(catchAsync([jwtMiddleware.verifyToken]), upload.single("image"), catchAsync(postJob))
+  .post([jwtMiddleware.verifyToken], upload.single("image"), catchAsync(postJob))
   .get(catchAsync(getAllJob));
 router.route("/:id").delete(catchAsync(deleteJob)).get(catchAsync(getSingelJobDetail));
 router.route("/detail/:id").get(catchAsync(getSingelJob));
