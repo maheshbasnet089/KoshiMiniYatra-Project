@@ -136,6 +136,8 @@ export default {
     async submitForm() {
       let formData = new FormData()
       formData.append('title', this.title)
+      formData.append('content', this.content)
+
       formData.append('image', this.image)
       formData.append('description', this.description)
       formData.append('category', this.category)

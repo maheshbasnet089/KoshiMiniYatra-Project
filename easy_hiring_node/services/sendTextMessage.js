@@ -13,7 +13,7 @@ const sendTextEmail = async (options) => {
   const mailOptions = {
     from: "Mahesh Basnet <basnetmanish089@gmail.com>",
     to: options.email,
-    subject: "Message from easy hiring",
+    subject: "Message from Khetala.com",
     text: options.message,
   };
 

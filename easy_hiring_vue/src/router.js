@@ -31,6 +31,7 @@ import AdminHome from "./components/admin/Admin-Home.vue";
 import AdminNotification from "./components/admin/Admin-Notification.vue";
 import AdminProfile from "./components/admin/Admin-Profile.vue";
 import AdminBlog from "./components/admin/Admin-Blog.vue";
+import AdminBlogEdit from "./components/admin/Admin-BlogEdit.vue";
 import AdminBlogList from "./components/admin/Admin-bloglist.vue";
 
 import UserList from "./components/admin/Admin-Userlist.vue";
@@ -188,6 +189,10 @@ const routes = [
       {
         path: "/admin-blog",
         component: AdminBlogList,
+      },
+      {
+        path: "/blog-edit/:id",
+        component: AdminBlogEdit,
       },
       {
         path: "/admin-userlist",
