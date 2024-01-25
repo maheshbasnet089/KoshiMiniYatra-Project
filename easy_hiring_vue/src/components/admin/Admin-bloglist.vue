@@ -31,6 +31,9 @@
                             <td> <v-btn small class="ma-2" @click="deleteJob(item.id)">
                                     <v-icon small color="red">mdi-cancel</v-icon>
                                 </v-btn>
+                               
+
+                                <v-btn small class="ma-2" @click="$router.push(`/blog-edit/${item.id}`)"> <v-icon small color="blue">mdi-pen</v-icon> </v-btn>
                             </td>
 
                         </tr>
@@ -71,6 +74,15 @@ export default {
                 console.log(error);
             }
         },
+        // async editBlog(bid) {
+        //     try {
+        //         await axios.get(`${API_LOCATION}/blog-edit/${bid}`);
+        //         // remove the city from the data array
+
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // },
     }
 }
 </script>
