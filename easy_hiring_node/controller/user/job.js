@@ -7,7 +7,7 @@ const {
   Salary,
 } = require("../../model");
 
-exports.postJob = (req, res, next) => {
+exports.postJob = async(req, res, next) => {
   const { title, description, pricing, type, level, location, lastDate } =
     req.body;
 
@@ -56,7 +56,7 @@ exports.postJob = (req, res, next) => {
     });
 };
 
-exports.getAllJob = (req, res, next) => {
+exports.getAllJob = async(req, res, next) => {
   Job.findAll({
     include: [
       {
@@ -122,7 +122,7 @@ exports.getSingelJob = (req, res, next) => {
       });
     });
 };
-exports.getSingelJobDetail = (req, res, next) => {
+exports.getSingelJobDetail = async(req, res, next) => {
   console.log("sdfsdfdf", req.query.salaryId);
   Job.findAll({
     where: {
@@ -162,7 +162,7 @@ exports.getSingelJobDetail = (req, res, next) => {
     });
 };
 
-exports.getSingelJobByAdd = (req, res, next) => {
+exports.getSingelJobByAdd = async(req, res, next) => {
   console.log('check');
   Job.findAll({
     where: {
@@ -195,8 +195,8 @@ exports.getSingelJobByAdd = (req, res, next) => {
       });
     });
 };
-
-exports.getSingelJobByCat= (req, res, next) => {
+//Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+exports.getSingelJobByCat= async(req, res, next) => {
   console.log('check');
   Job.findAll({
     where: {
@@ -246,7 +246,7 @@ exports.deleteJob = async (req, res) => {
   }
 };
 
-exports.getJobByUser = (req, res, next) => {
+exports.getJobByUser = async(req, res, next) => {
   console.log("eee");
   Job.findAll({
     where: { userId: req.userId },
@@ -276,7 +276,7 @@ exports.getJobByUser = (req, res, next) => {
     });
 };
 
-exports.getJobDetail = (req, res, next) => {
+exports.getJobDetail = async(req, res, next) => {
   console.log('fd');
   Job.findAll({
     where: { id: req.params.id },
