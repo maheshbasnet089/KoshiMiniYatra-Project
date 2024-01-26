@@ -4,10 +4,10 @@ let { AppliedJob, Job, Users } = require("./../../model");
 exports.createAppliedJob = async (req, res) => {
   try {
     const { jobId, coverLetter } = req.body;
-    const imagePath = req.files.image[0].filename || null;
-    console.log(req.files);
-    let videoPath = null;
-    if (req.files.video) videoPath = req.files.video[0].filename;
+    // const imagePath = req.files.image[0].filename || null;
+    // console.log(req.files);
+    // let videoPath = null;
+    // if (req.files.video) videoPath = req.files.video[0].filename;
 
     const userIdFromJobTable = await Job.findOne({
       where: {
@@ -23,18 +23,28 @@ exports.createAppliedJob = async (req, res) => {
     console.log("user", user.email);
 
     const userId = req.userId;
+    // const appliedJob = await AppliedJob.create({
+    //   jobId,
+    //   userId,
+    //   // image: `http://localhost:3000/${imagePath}`,
+    //   coverLetter,
+    //   // video: `http://localhost:3000/${videoPath}`,
+    // });
     const appliedJob = await AppliedJob.create({
       jobId,
       userId,
-      image: `http://localhost:3000/${imagePath}`,
       coverLetter,
-      video: `http://localhost:3000/${videoPath}`,
     });
 
-    const message = `You have a new application ${coverLetter} http://localhost:3000/${imagePath} http://localhost:3000/${videoPath} `;
+    const message = `You have a new application ${coverLetter}`;
+    // const message = `You have a new application ${coverLetter} http://localhost:3000/${imagePath} http://localhost:3000/${videoPath} `;
     try {
       // sendTextMessage(user.email, "You have a new application");
+      console.log("t");
+
       await sendTextEmail({ email: user.email, message });
+      console.log("t");
+
       console.log("message sent sucessfully");
     } catch (error) {
       console.log(error);
