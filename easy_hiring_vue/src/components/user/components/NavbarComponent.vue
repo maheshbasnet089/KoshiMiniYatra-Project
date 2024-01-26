@@ -21,10 +21,8 @@
           </li>
         </ul>
         <div class="d-flex" role="search" style="margin-left: 40rem;" >
-          <button v-if="!token" class="btn btn-outline-success"  @click="$router.push('/user/login')" style="color:#3f51b5 !important ">Login</button>
-          <button v-if="!token" class="btn btn-outline-success mx-2" @click="$router.push('/user/register')" style="color:#3f51b5 !important">Register</button>
-          <button class="btn btn-outline-success loginBtn"  @click="$router.push('/user/login')" style="color:#32922F !important; " >Login</button>
-          <button class="btn btn-outline-success loginBtn mx-2" @click="$router.push('/user/register')" style="color:#32922F !important;  ">Register</button>
+          <button class="btn btn-outline-success loginBtn"  @click="$router.push('/user/login')" style="color:black !important; " >Login</button>
+          <button class="btn btn-outline-success loginBtn mx-2" @click="$router.push('/user/register')" style="color:black !important; ">Register</button>
         </div>
       </div>
     </div>
