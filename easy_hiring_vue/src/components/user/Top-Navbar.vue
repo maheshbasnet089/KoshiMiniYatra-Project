@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app color="balck" dark>
+    <v-app-bar app color="#3f51b5" dark>
         <!-- <div class="d-flex align-center">
             <v-img alt="Vuetify Logo" class="shrink mr-2" contain
                 src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" transition="scale-transition"
@@ -8,13 +8,15 @@
             <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
                 src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png" width="100" />
         </div> -->
-        <h1 @click="homeFun()">Easy Hiring</h1>
+        <h1 @click="homeFun() ">Khetala.com</h1>
         <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
                 src="../../../src/assets/my-logo.jpeg" width="100" />
         <v-spacer></v-spacer>
         <div>
             <router-link to="/blogs" class="white--text">Blog | </router-link>
-            <router-link to="/jobs" class="white--text">Jobs List  </router-link>
+            <router-link to="/jobs" class="white--text">Jobs List | </router-link>
+            <router-link v-if="!token" to="/user/login" class="white--text">Login | </router-link>
+            <router-link v-if="!token" to="/user/register" class="white--text">Register  </router-link>
 
         </div>
         <div>

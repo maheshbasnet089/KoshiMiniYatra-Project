@@ -10,9 +10,10 @@ const {
   getCity,
 } = require("../../controller/user/city");
 const authJwt = require("../../middleware/auth/authjwt");
+const catchAsync = require("../../services/catchAsync");
 
-router.route("/").get(getAllCity).post(upload.single("image"), addCity);
+router.route("/").get(catchAsync(getAllCity)).post(upload.single("image"), catchAsync(addCity));
 
-router.route("/:id").delete(deleteCity).get(getCity);
+router.route("/:id").delete(catchAsync(deleteCity)).get(catchAsync(getCity));
 
 module.exports = router;

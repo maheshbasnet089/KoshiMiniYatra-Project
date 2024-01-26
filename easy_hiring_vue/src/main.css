@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+.logo {
+  font-family: "Rubik Doodle Triangles";
+  font-size: 2rem;
+  margin-left: -2rem;
+  font-weight: 400;
+}
+.navbar-nav li a {
+  font-size: 1.2rem;
+}

@@ -1,50 +1,30 @@
 <template>
     <template-view>
         <!-- Section 1 -->
-        <section class="hero" id="home" style="display: flex;">
-            <div class="w-50" style="margin-left: -26rem ;">
-                <h1 style="color :#3f51b5 ">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus
-                    voluptatem".
+        <section class="hero" id="home" style="display: flex; position: relative;">
+            <div class="" style="width: 100%; height: 100%; position: absolute; display: flex; justify-content: start;align-items: center;background-color: rgba(0,0,0,0.3);" >
+            <div class="" style=" margin-left: 1rem;">
+                <h1 style="color :#3eb73a; font-weight: bold; margin-top: -8rem;">"Khetala: Bridging Jobs, Connecting Workers.".
                 </h1>
                 <!-- <button class="btn btn-warning" style="background-color:#4CAF50 !important">Learn More</button> -->
             </div>
-            <div style="margin-top: -20rem;border: 1px solid red;">
-                <!-- <div style="display: flex;flex-direction: column;">
-              <h1>for Clients</h1>
-              <div>
-                  <button>hello</button>
-                  <button>hello</button>
-                  <button>hello</button>
-              </div>
-          </div> -->
-            </div>
+        </div>
         </section>
 
         <!-- Section 2 -->
         <section class="py-5" id="about">
             <div class="container" style="padding:30px">
+                <p style="font-size: 2.6rem;font-weight: 600;text-decoration: underline;">About us </p>
                 <div class="row">
                     <div class="col-md-6">
-                        <p style="font-size: 20px;font-weight: 600;text-decoration: underline;">About us </p>
-                        <img src="https://img.freepik.com/free-vector/choosing-best-candidate-concept_52683-43377.jpg?w=900&t=st=1675602278~exp=1675602878~hmac=7754f484b1c941f546eaeecfe1c74f84c8af0c91a83ebbfa1aa91449ae0e5cdc"
+                        <img src="./image/svg/about.svg"
                             alt="" class="img-fluid rounded" height="200px">
                     </div>
-                    <div class="col-md-6" style="padding:40px">
-                        <p style="font-size: 20px;font-weight: 600;">Easy Hiring</p>
+                    <div class="col-md-6" style="padding:40px;display: flex; flex-direction: column; justify-content: center;">
+                        <p style="font-size: 20px;font-weight: 600;">Welcome to Khetala</p>
                         
 
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, nostrum eaque. Culpa
-                            provident corporis vitae qui. Culpa debitis laboriosam voluptates suscipit vitae quidem
-                            autem odio quaerat commodi. Officiis perspiciatis fugiat eius, molestiae ratione cum error
-                            totam aperiam enim iure, illo obcaecati, atque numquam soluta? Beatae quisquam tempora odio
-                            dolorem quo!</p>
-
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, nostrum eaque. Culpa
-                            provident corporis vitae qui. Culpa debitis laboriosam voluptates suscipit vitae quidem
-                            autem odio quaerat commodi. Officiis perspiciatis fugiat eius, molestiae ratione cum error
-                            totam aperiam enim iure, illo obcaecati, atque numquam soluta? Beatae quisquam tempora odio
-                            dolorem quo!</p>
-
+                        <p style="text-align: justify;">At Khetala, we pride ourselves on being the conduit that effortlessly connects tasks with the right talent. Our mission revolves around simplifying the hiring process, whether you're a business seeking skilled professionals or an individual looking for exciting opportunities. What sets us apart is our commitment to efficiency, diversity, and reliability. We believe in a seamless experience, where tasks get done with precision and professionalism. For businesses, finding the perfect match for your needs is now easier than ever. For individuals, Khetala is the gateway to discovering fulfilling tasks that align with your skills and passion. Join our vibrant community, where empowerment, connection, and thriving define the Khetala experience.</p>
                     </div>
                 </div>
             </div>
@@ -132,7 +112,7 @@ export default {
 .hero {
     /* width: 100%; */
     height: 80vh;
-    background-image: url('https://img.freepik.com/premium-photo/young-man-sitting-waiting-room-with-folder-hand-before-interview_52137-33723.jpg?size=626&ext=jpg&ga=GA1.2.1448105259.1671379202&semt=sph');
+    background-image: url('./image/field.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -142,5 +122,8 @@ export default {
     justify-content: center;
 
 
+}
+*{
+    scroll-behavior: smooth;
 }
 </style>

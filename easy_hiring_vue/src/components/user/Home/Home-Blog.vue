@@ -7,7 +7,7 @@
             <v-col class="text-center">
               <p class="black--text text-h6 mb-0 pb-0">We write Blogs</p>
               <p class="grey--text caption">
-                Here our Inside Story and learning
+                A guide to good practice in farming
               </p>
             </v-col>
           </v-row>
