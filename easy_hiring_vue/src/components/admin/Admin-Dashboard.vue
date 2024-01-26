@@ -45,7 +45,7 @@
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Easy Hiring</v-toolbar-title>
+      <v-toolbar-title>Khetala.com</v-toolbar-title>
     </v-app-bar>
 
     <v-main class="pa-0 ma-0">
@@ -71,9 +71,9 @@ export default {
       { text: "Profile", icon: "mdi-account-circle", routes: '/admin-profile' },
       { text: "Blog", icon: "mdi-account-circle", routes: '/admin-Blog' },
       { text: "Job", icon: "mdi-account-circle", routes: '/admin-joblist' },
-      { text: "city", icon: "mdi-account-circle", routes: '/admin-citylist' },
-      { text: "category", icon: "mdi-account-circle", routes: '/admin-categorylist' },
-      { text: "salary", icon: "mdi-account-circle", routes: '/admin-salarylist' },
+      { text: "City", icon: "mdi-account-circle", routes: '/admin-citylist' },
+      { text: "Category", icon: "mdi-account-circle", routes: '/admin-categorylist' },
+      { text: "Salary", icon: "mdi-account-circle", routes: '/admin-salarylist' },
       { text: "WaitingList", icon: "mdi-account-circle", routes: '/admin-waitinglist' },
       { text: "Contact", icon: "mdi-account-circle", routes: '/admin-contact' },
 

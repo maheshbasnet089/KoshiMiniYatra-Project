@@ -15,15 +15,15 @@
             </quill-editor>
 
             <v-row>
-              <v-col cols="12" sm="6" md="6">
+              <!-- <v-col cols="12" sm="6" md="6">
                 <v-file-input :rules="fileRule" label="Upload Past Work photo" chips v-model="image"
                   truncate-length="7"></v-file-input>
-              </v-col>
+              </v-col> -->
 
-              <v-col cols="12" sm="6" md="">
+              <!-- <v-col cols="12" sm="6" md="">
                 <v-file-input label="Upload past work Video" :rules="[(v) => !!v || 'You must upload your work video!']"
                   chips v-model="video" truncate-length="7"></v-file-input>
-              </v-col>
+              </v-col> -->
             </v-row>
 
             <v-checkbox v-model="checkbox" :rules="[(v) => !!v || 'You must agree to continue!']"
@@ -112,8 +112,8 @@ export default {
       this.validate();
       let formData = new FormData()
       formData.append('coverLetter', this.content)
-      formData.append('image', this.image)
-      formData.append('video', this.video)
+      // formData.append('image', this.image)
+      // formData.append('video', this.video)
       formData.append('jobId', this.$route.params.id)
       // const params = this.$route.params.id
 

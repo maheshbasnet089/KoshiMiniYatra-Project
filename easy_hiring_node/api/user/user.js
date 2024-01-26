@@ -46,8 +46,8 @@ const fileStorage = multer.diskStorage({
   );
   //File Uploading Ends
 
-router.get('/profile', catchAsync([jwtMiddleware.verifyToken]),catchAsync([jwtMiddleware.isLogedOut]) , catchAsync(profileController.getProfile))
-router.post('/profile', catchAsync([jwtMiddleware.verifyToken]), catchAsync([jwtMiddleware.isLogedOut]), catchAsync(filehandler), catchAsync(profileController.postProfile))
+router.get('/profile', [jwtMiddleware.verifyToken],[jwtMiddleware.isLogedOut] , catchAsync(profileController.getProfile))
+router.post('/profile',[jwtMiddleware.verifyToken], [jwtMiddleware.isLogedOut], catchAsync(filehandler), catchAsync(profileController.postProfile))
 
 router.post("/forgotpassword",catchAsync(authController.forgotPassword))
 router.post("/resetpassword",catchAsync(authController.resetPassword))

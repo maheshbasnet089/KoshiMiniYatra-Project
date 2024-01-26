@@ -36,7 +36,7 @@ router.route("/address/:id").get(catchAsync(getSingelJobByAdd));
 router.route("/category/:id").get(catchAsync(getSingelJobByCat));
 
 
-router.route("/getJobByUser").get(catchAsync([jwtMiddleware.verifyToken]), catchAsync(getJobByUser));
+router.route("/getJobByUser").get([jwtMiddleware.verifyToken], catchAsync(getJobByUser));
 router.route("/getSingleDetail/:id").get(catchAsync(getJobDetail));
 // router.post(
 //   "/get-all-job",

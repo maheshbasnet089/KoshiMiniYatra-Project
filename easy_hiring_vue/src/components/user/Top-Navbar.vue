@@ -13,6 +13,7 @@
                 src="../../../src/assets/my-logo.jpeg" width="100" />
         <v-spacer></v-spacer>
         <div>
+            <router-link to="/home" class="white--text">Home | </router-link>
             <router-link to="/blogs" class="white--text">Blog | </router-link>
             <router-link to="/jobs" class="white--text">Jobs List | </router-link>
             <router-link v-if="!token" to="/user/login" class="white--text">Login | </router-link>

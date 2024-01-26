@@ -17,7 +17,7 @@ const upload = multer({
 
 router
   .route("/")
-  .post(catchAsync(verifyToken), upload, catchAsync( createAppliedJob))
-  .get(catchAsync(verifyToken), catchAsync(getAppliedJobs));
+  .post(verifyToken, upload, catchAsync( createAppliedJob))
+  .get(verifyToken, catchAsync(getAppliedJobs));
 
 module.exports = router;

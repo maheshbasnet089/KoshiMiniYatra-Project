@@ -4,6 +4,6 @@ const catchAsync = require("../../services/catchAsync");
 
 const router = require("express").Router();
 
-router.route("/").get(catchAsync(verifyToken), catchAsync(getMe));
+router.route("/").get(verifyToken, catchAsync(getMe));
 
 module.exports = router;
