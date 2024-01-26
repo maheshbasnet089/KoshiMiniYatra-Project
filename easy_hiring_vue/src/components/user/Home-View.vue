@@ -2,9 +2,9 @@
     <template-view>
         <!-- Section 1 -->
         <section class="hero" id="home" style="display: flex; position: relative;">
-            <div class="" style="width: 100%; height: 100%; position: absolute; display: flex; justify-content: start;align-items: center;background-color: rgba(0,0,0,0.3);" >
+            <div class="" style="width: 100%; height: 100%; position: absolute; display: flex; justify-content: start;align-items: center;background-color: rgba(0,0,0,0.4);" >
             <div class="" style=" margin-left: 1rem;">
-                <h1 style="color :#3eb73a; font-weight: bold; margin-top: -8rem;">"Khetala: Bridging Jobs, Connecting Workers.".
+                <h1 style="color :#55eb50; font-weight: bold; margin-top: -8rem;">"Khetala: Bridging Jobs, Connecting Workers.".
                 </h1>
                 <!-- <button class="btn btn-warning" style="background-color:#4CAF50 !important">Learn More</button> -->
             </div>
@@ -56,7 +56,7 @@
                                 <label for="message-textarea">Message</label>
                                 <textarea id="message-textarea" class="form-control" v-model="message" rows="3"></textarea>
                             </div>
-                            <button @click="sendMessage" type="submit" class="btn btn-primary my-2" style="background:#3f51b5 !important">
+                            <button @click="sendMessage" type="submit" class="btn btn-primary my-2" style="background:#32922F !important; color: #fff !important; border: none !important;">
                                 Send Message
                             </button>
                         </form>

@@ -19,27 +19,10 @@
           <li class="nav-item">
             <a class="nav-link" style="color:#32922F !important" href="#contact">Contact</a>
           </li>
-          <!-- <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
         </ul>
         <div class="d-flex" role="search" style="margin-left: 40rem;" >
-          <button class="btn btn-outline-success"  @click="$router.push('/user/login')" style="color:#32922F !important ">Login</button>
-          <button class="btn btn-outline-success mx-2" @click="$router.push('/user/register')" style="color:#32922F !important">Register</button>
+          <button class="btn btn-outline-success loginBtn"  @click="$router.push('/user/login')" style="color:#32922F !important; " >Login</button>
+          <button class="btn btn-outline-success loginBtn mx-2" @click="$router.push('/user/register')" style="color:#32922F !important;  ">Register</button>
         </div>
       </div>
     </div>
