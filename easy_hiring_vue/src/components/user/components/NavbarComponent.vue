@@ -38,10 +38,20 @@
           </li> -->
         </ul>
         <div class="d-flex" role="search" style="margin-left: 40rem;" >
-          <button class="btn btn-outline-success"  @click="$router.push('/user/login')" style="color:#3f51b5 !important ">Login</button>
-          <button class="btn btn-outline-success mx-2" @click="$router.push('/user/register')" style="color:#3f51b5 !important">Register</button>
+          <button v-if="!token" class="btn btn-outline-success"  @click="$router.push('/user/login')" style="color:#3f51b5 !important ">Login</button>
+          <button v-if="!token" class="btn btn-outline-success mx-2" @click="$router.push('/user/register')" style="color:#3f51b5 !important">Register</button>
         </div>
       </div>
     </div>
   </nav>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      token: localStorage.getItem('token'), // Assuming token is initially null
+      // Other data properties
+    };
+  },}
+
+</script>

@@ -88,7 +88,7 @@ export default {
               key.push(result.data.newData.token);
               this.progressLoader = false;
               window.localStorage.setItem("key", JSON.stringify(key));
-              this.$router.push("/").catch((err) => {
+              this.$router.push("/home").catch((err) => {
                 console.log(err);
               });
               break;
