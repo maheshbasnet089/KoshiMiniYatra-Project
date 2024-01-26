@@ -8,7 +8,7 @@
             <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
                 src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png" width="100" />
         </div> -->
-        <h1 @click="homeFun()">Khetala.com</h1>
+        <h1 @click="homeFun() ">Khetala.com</h1>
         <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
                 src="../../../src/assets/my-logo.jpeg" width="100" />
         <v-spacer></v-spacer>
