@@ -1,24 +1,22 @@
-import Vue from 'vue'
-import App from './App.vue'
-import vuetify from './plugins/vuetify'
+import Vue from "vue";
+import App from "./App.vue";
+import vuetify from "./plugins/vuetify";
 import router from "./router";
 import axios from "axios";
-import VueCookies from 'vue-cookies';
+import VueCookies from "vue-cookies";
+import "./main.css";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
-axios.interceptors.request.use(
-  (config) => {
-    config.baseURL = "http://localhost:3000";
-    config.withCredentials = true;
-    return config;
-  },
-
-);
+axios.interceptors.request.use((config) => {
+  config.baseURL = "http://localhost:3000";
+  config.withCredentials = true;
+  return config;
+});
 
 function loggedIn() {
   console.log("token", VueCookies.get("token"));
-  return window.localStorage.getItem("key") || VueCookies.get("token") ;
+  return window.localStorage.getItem("key") || VueCookies.get("token");
 }
 router.beforeEach((to, from, next) => {
   if (to.matched.some((record) => record.meta.requiresAuth)) {
@@ -51,5 +49,5 @@ router.beforeEach((to, from, next) => {
 new Vue({
   vuetify,
   router,
-  render: h => h(App)
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
