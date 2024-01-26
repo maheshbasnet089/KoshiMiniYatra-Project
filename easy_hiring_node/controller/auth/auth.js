@@ -181,6 +181,7 @@ exports.deleteUser = async (req, res, next) => {
 exports.updatePassword = async (req, res, next) => {
   const id = req.params.id;
   const email = req.body.email
+  const name = req.body.name
   let password;
   if (req.body.password !== "") {
     password = bcrypt.hashSync(req.body.password, 8);
@@ -188,6 +189,7 @@ exports.updatePassword = async (req, res, next) => {
   }
   const imagePath = req.file.filename;
   const user = await User.update({
+    name,
     password,
     image: `http://localhost:3000/${imagePath}`,
   }, { where: { email } });

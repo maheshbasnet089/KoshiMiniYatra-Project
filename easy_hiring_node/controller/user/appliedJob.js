@@ -36,13 +36,15 @@ exports.createAppliedJob = async (req, res) => {
       coverLetter,
     });
 
-    const message = `You have a new application ${coverLetter}`;
+    const message = `<p>You have a new application:</p>
+    <div>${coverLetter}</div>`;
     // const message = `You have a new application ${coverLetter} http://localhost:3000/${imagePath} http://localhost:3000/${videoPath} `;
+    console.log(message);
     try {
       // sendTextMessage(user.email, "You have a new application");
       console.log("t");
 
-      await sendTextEmail({ email: user.email, message });
+      await sendTextEmail({ email: user.email, message});
       console.log("t");
 
       console.log("message sent sucessfully");

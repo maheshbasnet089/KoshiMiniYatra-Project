@@ -15,13 +15,14 @@ module.exports = (sequelize, Sequelize) => {
     },
     image: {
       type: Sequelize.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     coverLetter: {
       type: Sequelize.STRING,
     },
     video: {
       type: Sequelize.STRING,
+      allowNull: true,
     },
   });
   return AppliedJob;
