@@ -32,7 +32,7 @@
               <td>{{ item.title }}</td>
               <td>{{ item.type }}</td>
               <td>{{ item.level }}</td>
-              <td>{{ item.location }}</td>
+              <td>{{ item.city.name }}</td>
              
               <td>
                 <v-btn small class="ma-2" @click="deleteJob(item.id)" >
@@ -63,6 +63,7 @@ export default {
             const response = await axios.get(`${API_LOCATION}/job`);
             console.log(response.data)
             this.jobs = response.data.result;
+            
         } catch (error) {
             console.log(error)
         } 

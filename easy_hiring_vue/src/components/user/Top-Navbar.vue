@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app color="#3f51b5" dark>
+    <v-app-bar app color="#32922F" dark>
         <!-- <div class="d-flex align-center">
             <v-img alt="Vuetify Logo" class="shrink mr-2" contain
                 src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png" transition="scale-transition"
@@ -8,9 +8,12 @@
             <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
                 src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png" width="100" />
         </div> -->
-        <h1 @click="homeFun() ">Khetala.com</h1>
-        <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
-                src="../../../src/assets/my-logo.jpeg" width="100" />
+        
+        <!-- <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
+                src="../../../src/assets/k-logo.png" width="100" /> -->
+             <!--   <h1 @click="homeFun() ">Khetala.com</h1> -->
+                <a class="navbar-brand logo ps-5" style="color:#fff !important" href="#"
+        @click.prevent="$router.push({ name: 'home' })">KHETALA</a>
         <v-spacer></v-spacer>
         <div>
             <router-link to="/home" class="white--text">Home | </router-link>

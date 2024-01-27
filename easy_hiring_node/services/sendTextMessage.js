@@ -11,7 +11,7 @@ const sendTextEmail = async (options) => {
   });
 
   const mailOptions = {
-    from: "Mahesh Basnet <basnetmanish089@gmail.com>",
+    from: "Khetala <trylaravelmail@gmail.com>",
     to: options.email,
     subject: "Message from Khetala.com",
     text: options.message,

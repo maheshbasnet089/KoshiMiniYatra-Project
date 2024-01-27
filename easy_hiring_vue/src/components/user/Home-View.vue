@@ -1,15 +1,29 @@
 <template>
     <template-view>
         <!-- Section 1 -->
-        <section class="hero" id="home" style="display: flex; position: relative;">
-            <div class="" style="width: 100%; height: 100%; position: absolute; display: flex; justify-content: start;align-items: center;background-color: rgba(0,0,0,0.4);" >
-            <div class="" style=" margin-left: 1rem;">
-                <h1 style="color :#55eb50; font-weight: bold; margin-top: -8rem;">"Khetala: Bridging Jobs, Connecting Workers.".
-                </h1>
-                <!-- <button class="btn btn-warning" style="background-color:#4CAF50 !important">Learn More</button> -->
+        <!-- <section class="hero" id="home" style="display: flex; position: relative;">
+            <div class=""
+                style="width: 100%; height: 100%; position: absolute; display: flex; justify-content: center;align-items: center;background-color: rgba(0,0,0,0.4);">
+                <div class="" style=" margin-left: 1rem;">
+                    <h1 style="color :#55eb50; font-weight: bold; margin-top: -8rem;">"Khetala: Bridging Jobs, Connecting
+                        Workers.".
+                    </h1>
+                    <button class="btn btn-warning" style="background-color:#4CAF50 !important">Learn More</button>
+                </div>
             </div>
-        </div>
+        </section> -->
+        <section class="hero" id="home" style="display: flex; position: relative;">
+            <div class=""
+                style="width: 100%; height: 100%; position: absolute; display: flex; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.6);">
+                <div class="" style="text-align: center; color: white; margin-left: 1rem;">
+                    <!-- <div class="" style="text-align: center; color: #55eb50; margin-left: 1rem;"> -->
+                    <h1 style="font-weight: bold; margin-top: -8rem;">"Khetala: Bridging Jobs, Connecting Workers."</h1>
+                    <button class="btn btn-success mt-5" @click="$router.push('/')"
+                        style="color:white !important; width: 150px; ">Jobs</button>
+                </div>
+            </div>
         </section>
+
 
         <!-- Section 2 -->
         <section class="py-5" id="about">
@@ -17,14 +31,22 @@
                 <p style="font-size: 2.6rem;font-weight: 600;text-decoration: underline;">About us </p>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="./image/svg/about.svg"
-                            alt="" class="img-fluid rounded" height="200px">
+                        <img src="./image/svg/about.svg" alt="" class="img-fluid rounded" height="200px">
                     </div>
-                    <div class="col-md-6" style="padding:40px;display: flex; flex-direction: column; justify-content: center;">
+                    <div class="col-md-6"
+                        style="padding:40px;display: flex; flex-direction: column; justify-content: center;">
                         <p style="font-size: 20px;font-weight: 600;">Welcome to Khetala</p>
-                        
 
-                        <p style="text-align: justify;">At Khetala, we pride ourselves on being the conduit that effortlessly connects tasks with the right talent. Our mission revolves around simplifying the hiring process, whether you're a business seeking skilled professionals or an individual looking for exciting opportunities. What sets us apart is our commitment to efficiency, diversity, and reliability. We believe in a seamless experience, where tasks get done with precision and professionalism. For businesses, finding the perfect match for your needs is now easier than ever. For individuals, Khetala is the gateway to discovering fulfilling tasks that align with your skills and passion. Join our vibrant community, where empowerment, connection, and thriving define the Khetala experience.</p>
+
+                        <p style="text-align: justify;">At Khetala, we pride ourselves on being the conduit that
+                            effortlessly connects tasks with the right talent. Our mission revolves around simplifying the
+                            hiring process, whether you're a business seeking skilled professionals or an individual looking
+                            for exciting opportunities. What sets us apart is our commitment to efficiency, diversity, and
+                            reliability. We believe in a seamless experience, where tasks get done with precision and
+                            professionalism. For businesses, finding the perfect match for your needs is now easier than
+                            ever. For individuals, Khetala is the gateway to discovering fulfilling tasks that align with
+                            your skills and passion. Join our vibrant community, where empowerment, connection, and thriving
+                            define the Khetala experience.</p>
                     </div>
                 </div>
             </div>
@@ -36,7 +58,23 @@
         <section class="py-5 bg-white" id="contact">
             <div class="container">
                 <div class="row">
+                    <div class="col-12">
+                        <div class="row bg-light pt-2">
+                            <div class="col-1"></div>
+                            <div class="col-4">
 
+                                <p><strong>Call us: </strong> 9800000000</p>
+                            </div>
+                            <div class="col-4">
+
+                                <p><strong>Email: </strong> khetala@info.com</p>
+                            </div>
+                            <div class="col-3">
+
+                                <p><strong>Address: </strong> Itahari</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6">
                         <h1>Contact us</h1>
                         <form @submit.prevent="sendMessage">
@@ -56,7 +94,8 @@
                                 <label for="message-textarea">Message</label>
                                 <textarea id="message-textarea" class="form-control" v-model="message" rows="3"></textarea>
                             </div>
-                            <button @click="sendMessage" type="submit" class="btn btn-primary my-2" style="background:#32922F !important; color: #fff !important; border: none !important;">
+                            <button @click="sendMessage" type="submit" class="btn btn-primary my-2"
+                                style="background:#32922F !important; color: #fff !important; border: none !important;">
                                 Send Message
                             </button>
                         </form>
@@ -123,7 +162,8 @@ export default {
 
 
 }
-*{
+
+* {
     scroll-behavior: smooth;
 }
 </style>
