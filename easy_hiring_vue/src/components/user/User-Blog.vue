@@ -7,7 +7,7 @@
             <v-col class="text-center">
               <p class="black--text text-h6 mb-0 pb-0">We write Blogs</p>
               <p class="grey--text caption">
-                Here our Inside Story and learning
+                More information about agriculture
               </p>
             </v-col>
           </v-row>
@@ -18,8 +18,14 @@
       <v-col md="4" v-for="blog in blogs" :key="blog.id">
 
         <v-card class="mx-auto" max-width="400">
-          <v-img class="white--text align-end" height="200px" :src="blog.image ">
-            <v-card-title>{{ blog.title }}</v-card-title>
+          <v-img class="white--text align-end" height="200px" :src="blog.image">
+            <div style="position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);"></div>
+            <v-card-title style="position: relative;z-index: 3;">{{ blog.title }}</v-card-title>
           </v-img>
 
           <v-card-subtitle class="pb-0"> {{ blog.date }} </v-card-subtitle>
