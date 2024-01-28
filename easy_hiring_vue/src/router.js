@@ -44,7 +44,7 @@ import AdminCategory from "./components/admin/Admin-Category.vue";
 import AdminWaitingList from "./components/admin/Admin-WaitingList.vue";
 import AdminSalaryList from "./components/admin/Admin-Salarylist.vue";
 import AdminSalaryVue from "./components/admin/Admin-Salary.vue";
-import AdminContact from "./components/admin/Admin-Contact.vue"
+import AdminContact from "./components/admin/Admin-Contact.vue" 
 
 Vue.use(VueRouter);
 

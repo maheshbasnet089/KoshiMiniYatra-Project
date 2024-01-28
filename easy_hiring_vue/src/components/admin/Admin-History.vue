@@ -2,7 +2,7 @@
   <div>
     <v-card>
       <div class="pa-3">
-        <p class="text-h6 indigo--text mb-0 pb-0">Recent Posted Jobs</p>
+        <p class="text-h6 mb-0 pb-0" style="color: #32922f;">Recent Posted Jobs</p>
         <span class="caption">Below you can see al the recently posted Jobs</span>
       </div>
       <v-simple-table height="300px">

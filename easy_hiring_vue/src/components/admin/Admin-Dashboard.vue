@@ -27,7 +27,7 @@
           LogOut</p>
         <v-divider></v-divider>
         <v-list nav dense>
-          <v-list-item-group v-model="selectedItem" color="primary">
+          <v-list-item-group v-model="selectedItem" color="#32922f">
             <v-list-item v-for="(item, i) in items" :key="i" router :to="item.routes">
               <v-list-item-icon>
                 <v-icon v-text="item.icon"></v-icon>
