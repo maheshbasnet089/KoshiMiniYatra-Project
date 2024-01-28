@@ -2,7 +2,7 @@
   <div>
     <v-card height="fitContent">
       <div class="pa-3">
-        <p class="text-h6 indigo--text mb-0">Recent User</p>
+        <p class="text-h6 mb-0" style="color: #32922f;">Recent User</p>
         <span class="caption">List of all the recent registered Users</span>
       </div>
       <v-divider></v-divider>

@@ -2,13 +2,13 @@
   <v-container>
     <v-row class="justify-space-around pa-5">
       <v-col md="4">
-        <v-card class="pa-5 white--text" color="indigo">
+        <v-card class="pa-5 white--text" color="#32922f">
           <p class="text-h4 text-center mb-0 pb-0">{{ this.users.length }}</p>
           <p class="caption text-center">Total User</p>
         </v-card>
       </v-col>
       <v-col md="4">
-        <v-card class="pa-5 white--text" color="indigo">
+        <v-card class="pa-5 white--text" color="#32922f">
           <p class="text-h4 text-center mb-0 pb-0">{{ this.jobs.length }}</p>
           <p class="caption text-center">Job Posted</p>
         </v-card>
