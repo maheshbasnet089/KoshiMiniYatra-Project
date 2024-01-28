@@ -9,7 +9,7 @@ const sendEmail = async (options) => {
     },
   });
   const mailOptions = {
-    from: "Easy Hiring <easyhiring@gmail.com>",
+    from: "Khetala <khetala@gmail.com>",
     to: options.email,
     subject: options.subject,
     text: "Your otp is  " + options.otp,

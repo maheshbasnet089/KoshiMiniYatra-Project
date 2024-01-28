@@ -36,8 +36,8 @@ exports.createAppliedJob = async (req, res) => {
       coverLetter,
     });
 
-    const message = `<p>You have a new application:</p>
-    <div>${coverLetter}</div>`;
+    const message = `You have a new application for: ${userIdFromJobTable.title} from Email: ${user.email}, Phone:${user.phone}
+    ${coverLetter}`;
     // const message = `You have a new application ${coverLetter} http://localhost:3000/${imagePath} http://localhost:3000/${videoPath} `;
     console.log(message);
     try {

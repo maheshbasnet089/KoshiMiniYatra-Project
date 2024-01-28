@@ -3,28 +3,28 @@
     <v-container>
       <v-row>
       <v-col>
-        <v-img class="white--text align-end" height="200px" :src= "image" >
+        <v-img class="white--text align-end" height="300px" :src= "image" >
         </v-img>
         <v-banner>
           <v-row class="">
             <v-col class="">
-          <v-card-title >{{ title }}</v-card-title>
+          <v-card-title><b>{{ title }}</b></v-card-title>
 
               <p class="grey--text text mb-0 pb-0 ">{{ date }}</p>
               <p class="grey--text caption">
                {{ description }}
               </p>
 
-              <div v-html="content"></div>
+             
               <!-- <p class="black--text">{{ content }}</p> -->
             </v-col>
-            <v-col>
-              <!-- <div>{{content}}</div> -->
-              
-            </v-col>
+           
           </v-row>
         </v-banner>
       </v-col>
+    </v-row>
+    <v-row>
+      <div v-html="content"></div>
     </v-row>
     </v-container>
     
