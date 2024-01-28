@@ -12,7 +12,7 @@
         <!-- <v-img alt="Vuetify Name" class="shrink mt-1 hidden-sm-and-down" contain min-width="100"
                 src="../../../src/assets/k-logo.png" width="100" /> -->
              <!--   <h1 @click="homeFun() ">Khetala.com</h1> -->
-                <a class="navbar-brand logo ps-5" style="color:#fff !important" href="#"
+                <a class="navbar-brand logo ps-5" style="color:#fff !important; margin-left: 1.6rem;" href="#"
         @click.prevent="$router.push({ name: 'home' })">KHETALA</a>
         <v-spacer></v-spacer>
         <div>

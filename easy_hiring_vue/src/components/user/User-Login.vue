@@ -96,7 +96,7 @@ export default {
               this.progressLoader = false;
               this.$router.push("/login");
           }
-          this.$router.push('/')
+          this.$router.push('/home')
           location.reload()
 
         })
